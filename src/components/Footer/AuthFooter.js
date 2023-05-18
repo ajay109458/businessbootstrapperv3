@@ -32,31 +32,8 @@ export default function AuthFooter(props) {
       justifyContent='space-between'
       pb='20px'
       fontSize='sm'>
-      <Text
-        color='white'
-        textAlign={{
-          base: "center",
-        }}
-        mb={{ base: "20px" }}>
-        &copy; {1900 + new Date().getYear()},{" "}
-        <Text as='span' mx='2px'>
-          {document.documentElement.dir === "rtl"
-            ? " مصنوع من ❤️ بواسطة"
-            : "Made with ❤️ by "}
-        </Text>
-        <Link href='https://www.simmmple.com' target='_blank'>
-          {document.documentElement.dir === "rtl"
-            ? " توقيت الإبداعية"
-            : "Simmmple "}
-        </Link>
-        &
-        <Link href='https://www.creative-tim.com' target='_blank'>
-          {document.documentElement.dir === "rtl" ? "سيممبل " : " Creative Tim"}
-        </Link>
-        {document.documentElement.dir === "rtl"
-          ? "للحصول على ويب أفضل"
-          : " for a better web"}
-      </Text>
+      
+        
       <List display='flex'>
         <ListItem
           me={{

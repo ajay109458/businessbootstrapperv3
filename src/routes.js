@@ -18,6 +18,7 @@
 
 // import
 import Dashboard from "views/Dashboard/Dashboard.js";
+import BusinessProfile from "views/Dashboard/BusinessProfile";
 import Tables from "views/Dashboard/Tables.js";
 import Billing from "views/Dashboard/Billing.js";
 import RTLPage from "views/RTL/RTLPage.js";
@@ -36,6 +37,13 @@ import {
 } from "components/Icons/Icons";
 
 var dashRoutes = [
+  {
+    path: "/profile",
+    name: "Business Profile",
+    icon: <HomeIcon color='inherit' />,
+    component: BusinessProfile,
+    layout: "/admin",
+  },
   {
     path: "/dashboard",
     name: "Dashboard",
